@@ -4,7 +4,7 @@ services:
   balance-bot-v2:
     image: hodlerhacks/balance-bot:latest
     volumes:
-      - ./config:/var/opt/balance-bot-v2/config
+      - /var/opt/balance-bot-v2/config:/var/opt/balance-bot-v2/config
     ports:
       - 127.0.0.1:3000:3000
     restart: always
